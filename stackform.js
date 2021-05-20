@@ -17,7 +17,7 @@ try {
   const stack = new PatrickStack();
 
   // Placing the inputted integer on the stack
-  if (isNaN(userInput)) {
+  if (!Number.isInteger(userInput)) {
     // Output for an error if the user inputs something that is not a number
     console.log('ERROR: Invalid Input');
   } else {

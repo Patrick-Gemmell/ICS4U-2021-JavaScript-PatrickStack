@@ -27,8 +27,8 @@ class PatrickStack {
   showStack() {
     let i;
     for (i = 0; i < this.STACK_AS_ARRAY.length; i++) {
-      console.log('Stack entry: ' + i &&
-                  + ' is equal to ' + this.STACK_AS_ARRAY[i]);
+      console.log('Stack entry: ' + i +
+                  ' is equal to ' + this.STACK_AS_ARRAY[i]);
     }
   }
   /**
