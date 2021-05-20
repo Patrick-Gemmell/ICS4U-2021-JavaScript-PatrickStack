@@ -17,16 +17,18 @@ try {
   const stack = new PatrickStack();
 
   // Placing the inputted integer on the stack
-  if (isNaN(userInput) == true) {
+  if (isNaN(userInput)) {
     // Output for an error if the user inputs something that is not a number
     console.log('ERROR: Invalid Input');
   } else {
     // Pushing and verifying the inputted number to the top of the stack
     stack.pushNumber(userInput);
-    console.log('Pushed to ArrayList:', stack.getPushedNumber());
+    stack.showStack();
+    stack.peek();
+    console.log(stack.pop());
   }
 
   // Catches and tells the user that an improper input was entered
 } catch (err) {
-  console.log('ERROR: Invalid Input');
+  console.log('ERROR: Invalid Input' + err);
 }

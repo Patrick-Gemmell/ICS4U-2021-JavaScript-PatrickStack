@@ -23,10 +23,27 @@ class PatrickStack {
   // Getter that tells the user the most recent input
   /**
   * array.
+  */
+  showStack() {
+    let i;
+    for (i = 0; i < this.STACK_AS_ARRAY.length; i++) {
+      console.log('Stack entry: ' + i &&
+                  + ' is equal to ' + this.STACK_AS_ARRAY[i]);
+    }
+  }
+  /**
+  * array.
+  */
+  peek() {
+    console.log('Peeking the array is: ' + this.STACK_AS_ARRAY.slice(0, 1));
+  }
+  /**
+  * array.
   * @return {int}
   */
-  getPushedNumber() {
-    return this.STACK_AS_ARRAY[this.STACK_AS_ARRAY.length - 1];
+  pop() {
+    const popElement = this.STACK_AS_ARRAY.shift();
+    return popElement;
   }
 }
 
